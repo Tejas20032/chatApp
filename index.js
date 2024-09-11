@@ -4,7 +4,7 @@ const cors = require("cors");
 const socketIO = require("socket.io");
 
 const app = express();
-const PORT = process.env.PORT || 4500; // Use the PORT environment variable or default to 4500
+const PORT = process.env.PORT || 4500; 
 
 const users = {};
 
@@ -29,7 +29,7 @@ io.on("connection", (socket) => {
     socket.on('disconnect', () => {
         socket.broadcast.emit('leave', { user: "Admin", message: `${users[socket.id]} has left` });
         console.log("User left");
-        delete users[socket.id]; // Clean up user list on disconnect
+        delete users[socket.id];
     });
 
     socket.on('message', ({ message, id }) => {
