@@ -10,7 +10,7 @@
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.right{
+.left{
    
     float:left;
     background-color:rgb(81, 81, 208);
@@ -18,7 +18,7 @@
     text-align: right;
 }
 
-.left{
+.right{
     float:right;
     background-color:rgb(196, 255, 184);
     text-align: left;
