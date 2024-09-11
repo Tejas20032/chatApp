@@ -88,7 +88,7 @@ const Chat = () => {
               key={i}
               user={item.id === id ? '' : item.user}
               message={item.message}
-              classs={item.id === id ? 'left' : 'right'}
+              classs={item.id === id ? 'right' : 'left'}
             />
           ))}
         </ReactScrollToBottom>
